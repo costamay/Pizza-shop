@@ -1,0 +1,13 @@
+#header {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../images/backg.jpeg)center/cover no-repeat;
+}
+
+.height{
+    min-height: 100vh;
+}
+.height-80{
+    min-width: 80vh;
+}
+.about-picture{
+    background: url(../images/image12.jpeg)center/cover no-repeat fixed;
+}
