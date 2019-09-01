@@ -12,7 +12,10 @@ function Total(quantity, delivery){
 
 //user interface logic
 $(document).ready(function(){
-    
+    $('form#myForm').submit(function(event){
+        var pizzaType = $('#type').val();
+        alert(pizzaType);
+    });
 
 
 
