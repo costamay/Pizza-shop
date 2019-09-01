@@ -9,7 +9,7 @@ body{
     min-height: 100vh;
 }
 .height-80{
-    min-width: 100vh;
+    min-width: vh;
 }
 .about-picture{
     background: url(../images/image12.jpeg)center/cover no-repeat fixed;
@@ -24,6 +24,7 @@ width: 100px;
 height: 100px;
 }
 .navbar{
-    position: sticky;
-    height: 60px
+    
 }
+
+
