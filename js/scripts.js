@@ -1,8 +1,23 @@
 //business logic
-
+function Order(type, size, crust,topping){
+    this.type = type;
+    this.size  = size;
+    this.crust = crust;
+    this.topping =togging;
+}
+function Total(quantity, delivery){
+    this.quantity = quantity;
+    this.delivery = delivery;
+}
 
 //user interface logic
 $(document).ready(function(){
+    
+
+
+
+
+    //sending message function
     $('form#contactForm').submit(function(event){
         event.preventDefault()
         var name = $('#name').val();
@@ -10,4 +25,6 @@ $(document).ready(function(){
         var mess = $('#mess').val();
         alert("Hi " +name+ " we have received your message and we will get in touch. Thank you for contacting us.");
       });
+
+      
 });
