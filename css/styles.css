@@ -19,3 +19,11 @@ body{
     height: 10px;
     margin: 0 auto;
 }
+.round{
+width: 100px;
+height: 100px;
+}
+.navbar{
+    position: sticky;
+    height: 60px
+}
