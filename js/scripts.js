@@ -5,11 +5,20 @@ function Order(type, size, crust,topping){
     this.crust = crust;
     this.topping =togging;
 }
-function Total(quantity, delivery){
+
+Order.prototype.fullOrder = function(){
+    return this.type +", "+ this.crust + ", "+this.topping;
+};
+
+function Total(price, quantity, delivery){
+    this.price;
     this.quantity = quantity;
     this.delivery = delivery;
 }
 
+
+var sizePrice = [1200, 900, 600]
+var deliverPrices = [200, 0];
 //user interface logic
 $(document).ready(function(){
     $('form#myForm').submit(function(event){
@@ -26,6 +35,16 @@ $(document).ready(function(){
         alert(pizzaQty);
         var pizzaPick =  parseInt($('#size').val());
         alert(pizzaPick);
+
+        var price =sizePrice[pizzaSize-1];
+        alert(price);
+
+        var DeliveryCost = deliverPrices[pizzaQty-1];
+        alert (DeliveryCost);
+
+        newOrder = new Order(pizzaType, pizzaSize, pizzaCrust, pizzaTop);
+        newTotal = new Total ( price, pizzaQty, DeliveryCost);
+
     });
 
 
