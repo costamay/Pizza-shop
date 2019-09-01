@@ -13,8 +13,19 @@ function Total(quantity, delivery){
 //user interface logic
 $(document).ready(function(){
     $('form#myForm').submit(function(event){
+        event.preventDefault();
         var pizzaType = $('#type').val();
         alert(pizzaType);
+        var pizzaSize =  parseInt($('#size').val());
+        alert(pizzaSize);
+        var pizzaCrust =  $('#crust').val();
+        alert(pizzaCrust);
+        var pizzaTop =  $('#top').val();
+        alert(pizzaTop);
+        var pizzaQty =  parseInt($('#qty').val());
+        alert(pizzaQty);
+        var pizzaPick =  parseInt($('#size').val());
+        alert(pizzaPick);
     });
 
 
@@ -22,7 +33,7 @@ $(document).ready(function(){
 
     //sending message function
     $('form#contactForm').submit(function(event){
-        event.preventDefault()
+        event.preventDefault();
         var name = $('#name').val();
         var pass = $('#email').val();
         var mess = $('#mess').val();
