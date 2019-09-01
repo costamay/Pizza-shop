@@ -6,10 +6,10 @@ body{
 }
 
 .height{
-    min-height: 100vh;
+    min-height: 80vh;
 }
 .height-80{
-    min-width: vh;
+    min-width: 100vh;
 }
 .about-picture{
     background: url(../images/image12.jpeg)center/cover no-repeat fixed;
@@ -20,8 +20,8 @@ body{
     margin: 0 auto;
 }
 .round{
-width: 100px;
-height: 100px;
+width: 60px;
+height: 60px;
 }
 .navbar{
     
